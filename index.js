@@ -17,6 +17,6 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
-server.post('/*', function(req, res){
-  res.sendfile('pages/index');
+app.post('/', function(request, response){
+  response.sendfile('pages/index');
 });
