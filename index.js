@@ -10,7 +10,13 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('pages/index');
+
+  var link = '"http://vidgyor.com/live/asianet.html"';
+
+  response.render('pages/index', {
+    link: link
+  });
+
 });
 
 app.post('/', function(request, response) {
