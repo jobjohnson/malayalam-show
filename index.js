@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
 
-  var link = '"http://vidgyor.com/live/asianet.html"';
+  var link = "http://vidgyor.com/live/asianet.html";
 
   response.render('pages/index', {
     link: link
